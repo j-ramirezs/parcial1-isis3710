@@ -1,0 +1,13 @@
+{
+    "EmailHeader": "Acceder",
+    "EmailSubHeader": "Usa tu cuenta de UniAlpes",
+    "EmailValidationMessage": "Formato de correo inválido",
+    "Next": "Siguiente",
+    "PasswordValidationMessage": "La contraseña debe ser al menos de 6 caracteres",
+    "CarMakerText": "Marca del carro",
+    "CarModelText": "Modelo del carro",
+    "CarYearText": "Año del carro",
+    "AvailableText": "Disponible",
+    "PriceText": "Precio",
+    "DescriptionText": "Descripción"
+}

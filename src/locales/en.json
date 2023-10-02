@@ -1,0 +1,13 @@
+{
+    "EmailHeader": "Log In",
+    "EmailSubHeader": "Use your UniAlpes Account",
+    "EmailValidationMessage": "Invalid email format",
+    "Next": "Next",
+    "PasswordValidationMessage": "Your password should be at least 6 char long",
+    "CarMakerText": "Car Maker",
+    "CarModelText": "Car Model",
+    "CarYearText": "Car Year",
+    "AvailableText": "Available",
+    "PriceText": "Price",
+    "DescriptionText": "Description"
+}
