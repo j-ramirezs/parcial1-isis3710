@@ -9,5 +9,6 @@
     "CarYearText": "Año del carro",
     "AvailableText": "Disponible",
     "PriceText": "Precio",
-    "DescriptionText": "Descripción"
+    "DescriptionText": "Descripción",
+    "CarNotFoundText": "Carro no encontrado"
 }

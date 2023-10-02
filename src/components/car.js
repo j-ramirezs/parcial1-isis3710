@@ -15,7 +15,7 @@ const Car = ({ carData }) => {
   const car = carData.find((item) => item.carMaker === carMaker);
 
   if (!car) {
-    return <div>Car not found</div>;
+    return <div><FormattedMessage id="CarNotFoundText"/></div>;
   }
 
     return (

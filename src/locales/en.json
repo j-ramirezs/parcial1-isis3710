@@ -9,5 +9,6 @@
     "CarYearText": "Car Year",
     "AvailableText": "Available",
     "PriceText": "Price",
-    "DescriptionText": "Description"
+    "DescriptionText": "Description",
+    "CarNotFoundText": "Car not found"
 }
