@@ -2,8 +2,25 @@ import React from 'react';
 import AppRouter from './components/appRouter';
 import { useState, useEffect } from 'react';
 import { FormValuesProvider } from './components/formValuesContext';
+import { IntlProvider } from "react-intl";
+
+import enMessages from './locales/en.json';
+import esMessages from './locales/es.json';
 
 function App() {
+
+  const detectBrowserLanguage = () => {
+    const userLanguage = navigator.language || navigator.userLanguage;
+    return userLanguage;
+  };
+
+  const userLanguage = detectBrowserLanguage();
+
+  const translations = {
+    en: enMessages,
+    es: esMessages,
+  };
+
 
   const [carData, setCarData] = useState([]);
 
@@ -26,11 +43,14 @@ function App() {
   }, []);
 
   return (
-    <FormValuesProvider>
-      <div className="App">
-          <AppRouter carData={carData}/>
-      </div>
-    </FormValuesProvider>
+    <IntlProvider locale={userLanguage} messages={translations[userLanguage]}>
+      <FormValuesProvider>
+        <div className="App">
+            <AppRouter carData={carData}/>
+        </div>
+      </FormValuesProvider>
+    </IntlProvider>
+    
   );
 }
 
